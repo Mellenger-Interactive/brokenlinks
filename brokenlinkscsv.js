@@ -6,11 +6,11 @@ lines.forEach((line) => {
   line_string += i++ + ',';
   var url = line.querySelector('td:nth-child(2) input');
   line_string += url.value + ',';
-  var error = line.querySelector('td:nth-child(4) a');
+  var error = line.querySelector('td:nth-child(5) a');
   line_string += error.innerText + ',';
-  var origin = line.querySelector('td:nth-child(3)>a');
+  var origin = line.querySelector('td:nth-child(4)>a');
   line_string += origin.getAttribute("href") + ',';
-  var source = line.querySelector('td:nth-child(3) blink a');
+  var source = line.querySelector('td:nth-child(4) blink a');
   line_string += source.getAttribute("href");
   line_string += '\n';
 });
